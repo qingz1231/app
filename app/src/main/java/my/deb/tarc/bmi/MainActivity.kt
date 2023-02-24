@@ -46,14 +46,14 @@ class MainActivity : AppCompatActivity() {
                 textViewStatus.text = String.format("%s : %s",getString(R.string.status),getString(R.string.under));
             }
 
-            if(bmi >= 18.5 && bmi <= 24.5){ //Normal
+            else if(bmi >= 18.5 && bmi <= 24.5){ //Normal
                 imageViewBMI.setImageResource(R.drawable.normal)
                 //Body Mass Index = 17.52
                 textViewBMI.text = String.format("%s : %.2f",getString(R.string.bmi),bmi)
                 textViewStatus.text = String.format("%s : %s",getString(R.string.status),getString(R.string.normal));
             }
 
-            if(bmi > 25){ //Normal
+            else if(bmi > 25){ //Normal
                 imageViewBMI.setImageResource(R.drawable.over)
                 //Body Mass Index = 17.52
                 textViewBMI.text = String.format("%s : %.2f",getString(R.string.bmi),bmi)
